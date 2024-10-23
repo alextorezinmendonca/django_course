@@ -8,11 +8,3 @@ def home(request):
                                                             'name': 'Alex',
                                                             
                                                             })
-
-
-def contact(request):
-    return render(request, 'delete_me/temp.html')
-
-
-def about(request):
-    return HttpResponse("about")    
