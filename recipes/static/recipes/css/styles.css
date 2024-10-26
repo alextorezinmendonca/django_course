@@ -154,6 +154,7 @@
     
     .recipe-list-item{
         max-width: 64rem;
+        height: fit-content;
         
     }
 
@@ -165,6 +166,11 @@
     .recipe-title-container{
         padding: var(--spacing-gutter-large);
         padding-bottom: 2rem);
+    }
+
+    .recipe-title-container a{
+        text-decoration: none;
+        color: var(--color-primary-dark);
     }
 
     .recipe-author{
@@ -195,6 +201,10 @@
         flex-flow: row wrap;
         padding: var(--spacing-gutter-medium);
         background: var(--color-gray-1);
+    }
+
+    .preparation-details{
+        padding: var(--spacing-gutter-medium);
     }
 
     .recipe-meta{

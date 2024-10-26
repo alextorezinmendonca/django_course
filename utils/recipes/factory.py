@@ -9,12 +9,13 @@ fake = Faker('pt_BR')
 # print(signature(fake.random_number))
 def make_recipe():
     return {
+        'id': fake.random_number(digits=2, fix_len=True),
         'title': fake.sentence(nb_words=4),
         'description': fake.sentence(nb_words=12),
         'preparation_time': fake.random_number(digits=2, fix_len=True),
         'preparation_time_unit': 'Minutos',
         'servings': fake.random_number(digits=2, fix_len=True),
-        'servings_unit': 'Porção',
+        'servings_unit': 'Porções',
         'preparation_steps': fake.text(3000),
         'created_at': fake.date_time(),
         'author': {
