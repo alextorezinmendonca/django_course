@@ -127,7 +127,7 @@
     .search-form:focus-within .search-button{
         color: var(--color-primary);
     }
-    
+
     .main-content {
         padding-top: 0;
     }
@@ -151,7 +151,7 @@
         max-width: 100%;
         
     }
-    
+
     .recipe-list-item{
         max-width: 64rem;
         
@@ -241,3 +241,6 @@
     .main-footer a:hover{
         filter: brightness(0.8)
     }
+
+
+
