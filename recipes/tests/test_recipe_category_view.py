@@ -3,7 +3,7 @@ from recipes import views
 from .test_recipe_base import RecipeTestBase
 
 
-class RecipeViewTest(RecipeTestBase):
+class RecipeCategoryViewTest(RecipeTestBase):
 
 
     # Category Tests

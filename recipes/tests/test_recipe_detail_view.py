@@ -3,7 +3,7 @@ from recipes import views
 from .test_recipe_base import RecipeTestBase
 
 
-class RecipeViewTest(RecipeTestBase):
+class RecipeDetailViewTest(RecipeTestBase):
 
     # Recipe Tests
     def test_recipe_detail_view_function_is_correct(self):
