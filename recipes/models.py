@@ -13,7 +13,7 @@ class Recipe(models.Model):
     description = models.CharField(max_length=150)
     preparation_time = models.IntegerField()
     preparation_time_unit = models.CharField(max_length=20)
-    slug = models.SlugField()
+    slug = models.SlugField(unique=True)
     servings = models.IntegerField()
     servings_unit = models.CharField(max_length=20)
     preparation_steps = models.TextField()
