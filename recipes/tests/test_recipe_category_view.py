@@ -4,9 +4,6 @@ from .test_recipe_base import RecipeTestBase
 
 
 class RecipeCategoryViewTest(RecipeTestBase):
-
-
-    # Category Tests
     def test_recipe_category_view_function_is_correct(self):
         view = resolve(reverse('recipes:category', kwargs={'category_id': 1}))
         self.assertIs(view.func, views.category)
