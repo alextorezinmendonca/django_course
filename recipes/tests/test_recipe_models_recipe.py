@@ -16,7 +16,7 @@ class RecipeModelTest(RecipeTestBase):
             description = 'description',
             preparation_time = '10',
             preparation_time_unit = 'minutes',
-            slug = 'title-slug',
+            slug = 'title-slug2',
             servings = 5,
             servings_unit = 'slice',
             preparation_steps = 'Recipe Preparation steps',
@@ -37,7 +37,7 @@ class RecipeModelTest(RecipeTestBase):
         with self.assertRaises(ValidationError):
             self.recipe.full_clean()
 
-    def test_recipe_preparation_steips_is_htmk_is_false_by_default(self):
+    def test_recipe_preparation_steips_is_html_is_false_by_default(self):
         recipe = self.make_recipe_no_defaults()
         self.assertFalse(recipe.preparation_steps_is_html)
         
